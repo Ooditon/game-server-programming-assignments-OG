@@ -30,7 +30,7 @@ namespace tehtava2
             }
             Item newItem = new Item();
             newItem.Name = item.Name;
-            // set other values for new item
+            newItem.Type = item.Type;
             newItem.Id = Guid.NewGuid();
             newItem.CreationTime = item.CreationDate;
             return _repository.CreateItem(playerid, newItem);
