@@ -11506,11 +11506,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Otto/Desktop/Backend/tehtava2/tehtava2.csproj",
+      "projectUniqueName": "/Users/Otto/game-server-programming-assignments-OG/tehtava2/tehtava2.csproj",
       "projectName": "tehtava2",
-      "projectPath": "/Users/Otto/Desktop/Backend/tehtava2/tehtava2.csproj",
+      "projectPath": "/Users/Otto/game-server-programming-assignments-OG/tehtava2/tehtava2.csproj",
       "packagesPath": "/Users/Otto/.nuget/packages/",
-      "outputPath": "/Users/Otto/Desktop/Backend/tehtava2/obj/",
+      "outputPath": "/Users/Otto/game-server-programming-assignments-OG/tehtava2/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

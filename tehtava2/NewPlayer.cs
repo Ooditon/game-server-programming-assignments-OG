@@ -1,16 +1,11 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace tehtava2
 {
     public class NewPlayer
     {
         public string Name { get; set; }
-
-        public NewPlayer(string playerName) 
-        {
-            Name = playerName;
+        [Range(1, 99)]
+        public int Level { get; set; }
         }
-
-        public static implicit operator NewPlayer(string player) {
-            return new NewPlayer(player);
-        }
-    }
 }

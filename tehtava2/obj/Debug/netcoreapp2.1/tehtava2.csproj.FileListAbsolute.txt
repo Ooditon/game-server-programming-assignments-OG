@@ -12,3 +12,17 @@
 /Users/Otto/Desktop/Backend/tehtava2/obj/Debug/netcoreapp2.1/tehtava2.RazorTargetAssemblyInfo.cache
 /Users/Otto/Desktop/Backend/tehtava2/obj/Debug/netcoreapp2.1/tehtava2.dll
 /Users/Otto/Desktop/Backend/tehtava2/obj/Debug/netcoreapp2.1/tehtava2.pdb
+/Users/Otto/game-server-programming-assignments-OG/tehtava2/bin/Debug/netcoreapp2.1/tehtava2.deps.json
+/Users/Otto/game-server-programming-assignments-OG/tehtava2/bin/Debug/netcoreapp2.1/tehtava2.runtimeconfig.json
+/Users/Otto/game-server-programming-assignments-OG/tehtava2/bin/Debug/netcoreapp2.1/tehtava2.runtimeconfig.dev.json
+/Users/Otto/game-server-programming-assignments-OG/tehtava2/bin/Debug/netcoreapp2.1/tehtava2.dll
+/Users/Otto/game-server-programming-assignments-OG/tehtava2/bin/Debug/netcoreapp2.1/tehtava2.pdb
+/Users/Otto/game-server-programming-assignments-OG/tehtava2/obj/Debug/netcoreapp2.1/tehtava2.csprojAssemblyReference.cache
+/Users/Otto/game-server-programming-assignments-OG/tehtava2/obj/Debug/netcoreapp2.1/tehtava2.csproj.CoreCompileInputs.cache
+/Users/Otto/game-server-programming-assignments-OG/tehtava2/obj/Debug/netcoreapp2.1/tehtava2.RazorAssemblyInfo.cache
+/Users/Otto/game-server-programming-assignments-OG/tehtava2/obj/Debug/netcoreapp2.1/tehtava2.RazorAssemblyInfo.cs
+/Users/Otto/game-server-programming-assignments-OG/tehtava2/obj/Debug/netcoreapp2.1/tehtava2.AssemblyInfoInputs.cache
+/Users/Otto/game-server-programming-assignments-OG/tehtava2/obj/Debug/netcoreapp2.1/tehtava2.AssemblyInfo.cs
+/Users/Otto/game-server-programming-assignments-OG/tehtava2/obj/Debug/netcoreapp2.1/tehtava2.RazorTargetAssemblyInfo.cache
+/Users/Otto/game-server-programming-assignments-OG/tehtava2/obj/Debug/netcoreapp2.1/tehtava2.dll
+/Users/Otto/game-server-programming-assignments-OG/tehtava2/obj/Debug/netcoreapp2.1/tehtava2.pdb
