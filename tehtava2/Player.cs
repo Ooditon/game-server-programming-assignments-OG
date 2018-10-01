@@ -14,6 +14,7 @@ namespace tehtava2
     public DateTime CreationTime { get; set; }
     public int Level {get; set;}
     public List <Item> items {get; set;}
+    public string Tag { get; set; }
 }
 
 }

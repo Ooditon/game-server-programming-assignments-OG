@@ -10,6 +10,10 @@ namespace tehtava2
     Task<Player> CreatePlayer(Player player);
     Task<Player> ModifyPlayer(Guid id, ModifiedPlayer player);
     Task<Player> DeletePlayer(Guid id);
+    Task<Player> GetPlayerByName(string name);
+    Task<Player[]> GetPlayerByTag(string tag);
+    Task<Player> UpdatePlayerName(Guid id, UpdatedPlayerName player);
+    Task<Player[]> GetPlayerMoreScore(int minScore);
 
     Task<Item> CreateItem(Guid playerId, Item item);
     Task<Item> GetItem(Guid playerId, Guid itemId);

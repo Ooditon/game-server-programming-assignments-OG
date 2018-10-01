@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace tehtava2
@@ -58,6 +59,18 @@ namespace tehtava2
             foreach (Player player in players)
             {
                 if (player.Id == id)
+                {
+                    return player;
+                }
+            }
+            return null;
+        }
+
+        private Player GetPlayerName(string name)
+        {
+            foreach (Player player in players)
+            {
+                if (player.Name == name)
                 {
                     return player;
                 }
@@ -128,6 +141,48 @@ namespace tehtava2
             {
                 return null;
             }
+        }
+
+        public async Task<Player> GetPlayerByName(string name)
+        {
+            await Task.CompletedTask;
+            return GetPlayerName(name);
+        }
+
+        public async Task<Player[]> GetPlayerMoreScore(int minScore) {
+
+            await Task.CompletedTask;
+            foreach (Player player in players) {
+                if (player.Score > minScore) {
+                    return new Player[]{player};
+                }
+            }
+            return null;
+        }
+
+        public async Task<Player[]> GetPlayerByTag(string tag)
+        {
+            /*foreach (Player player in players)
+            {
+                if (player.Tag == tag)
+                {
+                    return player;
+                }
+            }
+            return null;*/
+            await Task.CompletedTask;
+            return players.Where(x => x.Tag == tag).ToArray();
+        }
+
+        public async Task<Player> UpdatePlayerName(Guid id, UpdatedPlayerName player)
+        {
+            await Task.CompletedTask;
+            Player found = GetPlayerById(id);
+            if (found != null)
+            {
+                found.Name = player.UpdatedName;
+            }
+            return found;
         }
     }
 }

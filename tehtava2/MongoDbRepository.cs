@@ -48,6 +48,13 @@ namespace tehtava2 {
             return player2;
         }
 
+        public async Task<Player> UpdatePlayerName(Guid id, UpdatedPlayerName player) {
+            var filter = Builders<Player>.Filter.Eq("Id", id);
+            var update = Builders<Player>.Update.Set("Name", player.UpdatedName);
+            var player2 = await collection.FindOneAndUpdateAsync(filter, update);
+            return player2;
+        }
+
         public async Task<Item> GetItem(Guid playerid, Guid id) {
             var filter = Builders<Player>.Filter.Eq("Id", playerid);
             var cursor = await collection.FindAsync(filter);
@@ -105,6 +112,30 @@ namespace tehtava2 {
             player.items.Remove(found);
             await collection.FindOneAndReplaceAsync(filter, player);
             return found;
+        }
+
+        public async Task<Player> GetPlayerByName(string name)
+        {
+            var filter = Builders<Player>.Filter.Eq("Name", name);
+            var cursor = await collection.FindAsync(filter);
+            Player player = cursor.Single();
+            return player;
+        }
+
+        public async Task<Player[]> GetPlayerByTag(string tag)
+        {
+            var filter = Builders<Player>.Filter.Eq("Tag", tag);
+            var cursor = await collection.FindAsync(filter);
+            Player[] player = cursor.ToList().ToArray();
+            return player;
+        }
+
+        public async Task<Player[]> GetPlayerMoreScore(int minScore)
+        {
+            var filter = Builders<Player>.Filter.Gt("Score", minScore);
+            var cursor = await collection.FindAsync(filter);
+            Player[] player = cursor.ToList().ToArray();
+            return player;
         }
     }
 }
